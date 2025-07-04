@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machines Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/tech.html" class="navbar__links">Tech</a>
+            </li>
+            <li class="navbar__item">
+              <a href="machines.html" class="navbar__links">Machines</a>
+            </li>
+            <li class="navbar__btn"><a href="/" class="button">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+ <section class="machines" id="machines">
+        <h2>Our Machines</h2>
+        <div class="machine-grid">
+            <div class="machine-card" onclick="openLightbox('images/cnc.jpg')">
+                <img src="images/cnc.jpg" alt="CNC Machine">
+                <h3>CNC Machine</h3>
+                <p class="machine-desc">CNC machines automate machining with precision.
+                <br><br>Products: steel aerospace parts, metal automotive components, wooden decorations and plastic consumer goods pieces.</p>
+            </div>   
+            <div class="machine-card" onclick="openLightbox('images/vmc.jpg')">
+                <img src="images/vmc.jpg" alt="VMC Machine">
+                <h3>VMC Machine</h3>
+                <p class="machine-desc">VMC machines perform precise milling, drilling, and tapping operations.<br>
+                   <br> Products: Automotive components, aerospace parts, medical implants, industrial molds, and consumer electronics casings.</p>
+            </div>
+            <div class="machine-card" onclick="openLightbox('images/jig.jpg')">
+                <img src="images/jig3.jpg" alt="Jig Boring Machine">
+                <h3>Jig Boring Machine</h3>
+                <p class="machine-desc">Jig boring machines ensure high-precision hole enlargement and alignment.<br>
+                    <br> Products: Aerospace components, engine blocks, die molds, precision fixtures, and machine tool parts.</p>
+            </div>   
+            <div class="machine-card" onclick="openLightbox('images/lathe.jpg')">
+                <img src="images/lathe.jpg" alt="Lathe Machine">
+                <h3>Lathe Machine</h3>
+                <p class="machine-desc">Lathe machines shape materials by rotating them against a cutting tool.<br>
+                    <br> Products: Shafts, bushings, nuts, bolts, machine spindles, and automotive parts.</p>
+            </div>
+            <div class="machine-card" onclick="openLightbox('images/troub.jpg')">
+                <img src="images/troub.jpg" alt="Troub Machine">
+                <h3>Troub Machine</h3>
+                <p class="machine-desc">Troub machines perform precision turning and boring operations<br>
+                    <br> Products: Small mechanical parts, intricate aerospace components, and fine-threaded fasteners.</p>
+            </div>
+            <div class="machine-card" onclick="openLightbox('images/surface.jpg')">
+                <img src="images/surface.jpg" alt="Surface Grinding Machine">
+                <h3>Surface Grinding Machine</h3>
+                <p class="machine-desc">Surface grinding machines refine surfaces with high precision and smoothness.<br>
+                    <br> Products: Dies, gauges, automotive parts, metal plates, and industrial tools.</p>
+            </div>
+            <div class="machine-card" onclick="openLightbox('images/milling.jpg')">
+                <img src="images/milling.jpg" alt="Milling Machine">
+                <h3>Milling Machine</h3>
+                <p class="machine-desc">Milling machines cut, shape, and drill materials with rotating cutters.<br>
+                    <br> Products: Engine parts, molds, gears, brackets, and precision tooling</p>
+            </div>
+            <div class="machine-card" onclick="openLightbox('images/edm.jpg')">
+                <img src="images/edm.jpg" alt="EDM Machine">
+                <h3>EDM Machine</h3>
+                <p class="machine-desc">EDM machines shape hard metals using electrical sparks.<br>
+                    <br> Products: Injection molds, aerospace turbine blades, medical implants, and complex dies.</p>
+            </div>
+        </div>
+    </section>
+<!-- Lightbox (Image Preview) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img">
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
